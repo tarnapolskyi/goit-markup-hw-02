@@ -5,14 +5,15 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --addition-bg-color: #2f303a;
+  --reverse-text-color: #ffffff;
 }
 body {
-  background-color: var(--primary-bg-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
-  letter-spacing: 0.03em;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 /*======= Стили для сброса ====== */
 .list {
@@ -21,19 +22,19 @@ body {
 .link {
   text-decoration: none;
 }
-/*Стили для всех секций*/
+/*==Стили для всех секций==*/
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 /*======= Стили для index.html =======*/
 /*=====Шапка сайта=====*/
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -55,38 +56,41 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
 /*=====Герой=====*/
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  color: var(--reverse-text-color);
   text-transform: uppercase;
-  color: #ffffff;
+  text-align: center;
   background-color: var(--addition-bg-color);
 }
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--reverse-text-color);
+  text-align: center;
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 /*=====O нас=====*/
 .about-title {
   font-weight: 700;
-  text-transform: uppercase;
   color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 .about-text {
-  font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -99,31 +103,60 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--primary-text-color);
+  text-align: center;
 }
 .team-role {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19px;
-  text-align: center;
   color: var(--secondary-text-color);
+  text-align: center;
 }
 /*=====Футер======*/
 footer {
   background-color: var(--addition-bg-color);
 }
 .logo-badge-reverse {
-  color: #ffffff;
+  color: var(--reverse-text-color);
 }
 .address {
-  font-weight: 400;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--reverse-text-color);
 }
 .feedback {
-  font-weight: 400;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+.feedback:hover,
+.feedback:focus {
+  color: var(--accent-color);
+}
 /* Стили для portfolio.html */
+.sorting-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sorting-button:hover,
+.sorting-button:focus {
+  color: var(--reverse-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
